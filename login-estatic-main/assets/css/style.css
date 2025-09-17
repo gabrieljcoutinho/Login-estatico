@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #4375ff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: .7rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+}
+
+div{
+    width: 20rem;
+    margin: 3rem;
+}
+
+h1 {
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #4375ff;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size:1rem;
+    padding: .5rem 0;
+    color: #949494;
+}
+
+input{
+    width: 100%;
+    border: solid 1px #ccc;
+    outline: none;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+
+input:focus{
+    border: solid 1px #4375ff;
+}
+
+button{
+    border: solid 1px #4375ff;
+    outline: none;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    margin-bottom: .7rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button[type="submit"] {
+    color: #fff;
+    background-color: #4375ff;
+}
+
+button[type="submit"]:hover {
+    background-color: #2d4ca1;
+}
+
+button[type="reset"] {
+    color: #4375ff;
+    background-color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 978px) {
+    img {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+    img {
+        display: none;
+    }
+    section{
+        width: 100%;
+        margin: 1rem;
+    }
+    div{
+        width: 100%;
+        margin: 0;
+    }
+
+    h1{
+        margin-bottom: 2rem;
+    }
+}
